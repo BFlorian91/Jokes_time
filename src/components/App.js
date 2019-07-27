@@ -59,7 +59,9 @@ class App extends Component {
 					<h2 className="title">Jokes TIME !!</h2>
 				</Layout>
 				<div className="main">
-					<p>{!isFetching ? <Loading /> : jokes[this.getRandomInt(100)].blagues}</p>
+					<div style={{ margin: '20px 20px' }} >
+						<p>{!isFetching ? <Loading /> : jokes[this.getRandomInt(100)].blagues}</p>
+					</div>
 				</div>
 			</div>
 		);
