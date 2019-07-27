@@ -6,7 +6,7 @@ body {
 .App {
 	text-align: center;
 	background-color: #282c34;
-	padding: 100px;
+	padding: 10px 100px;
 }
 
 .title {
@@ -20,6 +20,11 @@ body {
 	font-family: 'Gloria Hallelujah', cursive;	
 	font-size: 20px;
 	color: white;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);	
+	border-radius: 10px;
+	border: solid 2px black;
+	box-shadow: 5px 10px #1e2128;
+
 }
 
 
