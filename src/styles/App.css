@@ -1,0 +1,15 @@
+body {
+	background-color: #282c34;
+}
+
+.App {
+	text-align: center;
+	background-color: #282c34;
+}
+
+.title {
+	font-family: 'Bangers', cursive;
+	background-color: #282c34;
+	font-size: 40px;
+	color: white;
+}

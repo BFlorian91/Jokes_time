@@ -1,0 +1,32 @@
+.container {
+	background-color: #282c34;
+}
+
+.clown {
+	width: 210px;
+	height: 260px;
+	margin: 20px auto;
+	animation: culbuto infinite 2s ease-in-out;
+}
+
+.clown:hover {
+	width: 410px;
+	height: 460px;
+	margin: 20px auto;
+	animation: culbuto infinite .2s ease-in-out;
+}
+
+@keyframes culbuto{
+	from {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(35deg);
+	}
+	50% {
+		transform: rotate(-35deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
