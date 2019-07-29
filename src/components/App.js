@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
-import Layout from './Layout.js'
 
 const API = 'https://bridge.buddyweb.fr/api/blagues/blagues/';
 
@@ -30,7 +29,8 @@ class App extends Component {
 		super(props);
 		this.state = {
 			jokes: [],
-			isFetching: false
+			isFetching: false,
+			display: false,
 		};
 	}
 
@@ -43,7 +43,7 @@ class App extends Component {
 						jokes: json, 
 						isFetching: true
 					})
-				})}, 2000);
+				})}, 1000);
 	}
 
 	getRandomInt(max) {
@@ -51,16 +51,32 @@ class App extends Component {
 	}
 
 	render() {
-
 		const { jokes, isFetching } = this.state;
 		return (
 			<div className="App">
-				<Layout>
 					<h2 className="title">Jokes TIME !!</h2>
-				</Layout>
-				<div className="main">
+					<img 
+						className="clown" 
+						src="https://cdn.pixabay.com/photo/2019/07/18/08/28/circus-animal-4345840_960_720.png"
+						alt="clown"
+						onClick={() => {
+							if (!this.state.display) {
+								this.setState({
+									display: true,
+								})
+								document.getElementById('main').style.display = "block";
+							} else {
+								//window.location.reload();
+								document.getElementById('main').style.display = "block";
+								this.setState({
+									display: this.state.display,
+								})
+							}
+						}
+					}/>
+				<div id="main">
 					<div style={{ margin: '20px 20px' }} >
-						<p>{!isFetching ? <Loading /> : jokes[this.getRandomInt(100)].blagues}</p>
+						{!isFetching ? <Loading /> : jokes[this.getRandomInt(100)].blagues}
 					</div>
 				</div>
 			</div>

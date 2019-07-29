@@ -15,7 +15,8 @@ body {
 	color: white;
 }
 
-.main {
+#main {
+	display: none;
 	font-family: 'Gloria Hallelujah', cursive;	
 	font-size: 20px;
 	color: white;
@@ -24,6 +25,32 @@ body {
 	border: solid 2px black;
 	box-shadow: 5px 10px 6px #1e2128;
 
+}
+
+.clown {
+	width: 25%;
+	height: 25;
+	/*margin: 20px auto;*/
+	animation: culbuto infinite 4s ease-in-out;
+}
+
+/*.clown:hover {*/
+	/*width: 35%;*/
+	/*height: 35%;*/
+	/*margin: 20px auto;*/
+	/*animation: culbuto infinite .2s ease-in-out;*/
+/*}*/
+
+@keyframes culbuto{
+	from {
+		transform: rotate(35deg);
+	}
+	50% {
+		transform: rotate(-35deg);
+	}
+	to {
+		transform: rotate(35deg);
+	}
 }
 
 
