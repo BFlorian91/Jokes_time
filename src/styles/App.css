@@ -10,9 +10,16 @@ body {
 
 .title {
 	font-family: 'Bangers', cursive;
-	background-color: #282c34;
-	font-size: 40px;
-	color: white;
+	font-size: 3vw;
+	/*color: white;*/
+	background: red;
+	background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+	background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+	background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+	background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/*font-size: 20vw;*/
 }
 
 #main {
@@ -35,10 +42,10 @@ body {
 }
 
 /*.clown:hover {*/
-	/*width: 35%;*/
-	/*height: 35%;*/
-	/*margin: 20px auto;*/
-	/*animation: culbuto infinite .2s ease-in-out;*/
+/*width: 35%;*/
+/*height: 35%;*/
+/*margin: 20px auto;*/
+/*animation: culbuto infinite .2s ease-in-out;*/
 /*}*/
 
 @keyframes culbuto{
